@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.3"
+  },
+  "name": "alborz",
+  "version": "1.0.0",
+  "description": "new responsive themes for wordpress",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build":"tailwindcss build tailwind.css -o style.css",
+    "start":"browser-sync start --proxy http://localhost:8080 --files 'style.css, *.css, *.php, ./*.php, ./**/*.php"
+  },
+  "author": "Ali Akbar Sazis",
+  "license": "ISC"
+}
