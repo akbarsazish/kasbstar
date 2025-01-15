@@ -5,7 +5,8 @@
 </div>
 
 # 📗 Table of Contents
-![ScreenShot](https://github.com/akbarsazish/screenshot.png)
+![ScreenShot](https://github.com/akbarsazish/kasbstar/screenshot.png)
+![ScreenShot](https://raw.githubusercontent.com/akbarsazish/kasbstar/main/screenshot.png)
 
 
 - [📖 About the Project](#about-project)
