@@ -181,7 +181,7 @@
 							   <i class="icofont-ui-contact-list"></i>
 							</div>
 							<h3> سفارش کالا </h3>
-							<p> سفارش کالا مورد نظر تلفنی یا آنلاین در   <a class="text-primary" href="https://starfoods.ir/" > استارفود </a>  </p>
+							<p> سفارش کالا مورد نظر تلفنی یا آنلاین در   <a class="text-primary" target="_blank" href="https://starfoods.ir/" > استارفود </a>  </p>
 						</div>
 						<!-- End Single features -->
 					</div>
