@@ -55,8 +55,6 @@
 - GitHub: [@githubhandle](https://github.com/akbarsazish)
 - Twitter: [@twitterhandle](https://twitter.com/AliAkbarSazish1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ali-akbar-sazish/)
-- Wellfound: [Wellfound](https://wellfound.com/u/ali-akbar-sazish)
-
 
 
 <!-- CONTRIBUTING -->
