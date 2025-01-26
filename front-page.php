@@ -321,7 +321,52 @@
 			</div>
 		</section>
 		<!--/ End Call to action -->
-		
+
+
+		<div class="row">
+					<?php 
+					// Custom query to get the last 3 posts
+					$args = array(
+						'posts_per_page' => 6, 
+						'post_status' => 'publish', 
+					);
+
+					$latest_posts = new WP_Query($args);
+
+					if ($latest_posts->have_posts()) : 
+						while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
+							<div class="col-lg-4 col-md-6 col-12">
+								<!-- Single Blog -->
+								<div class="single-news">
+									<div class="news-head">
+										<a href="<?php the_permalink()?>">
+											<?php if (has_post_thumbnail()) : ?>
+												<?php 
+													$thumbnail_id = get_post_thumbnail_id();
+													$thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'blog-cover');
+												?>
+												<img class="p-4" src="<?php echo esc_url($thumbnail_url[0]); ?>" alt="<?php the_title_attribute(); ?>" class="rounded">
+											<?php else : ?>
+												<img class="p-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog2.jpg" alt="Default Image" class="rounded"> 
+											<?php endif; ?>
+										</a>
+									</div>
+									<div class="news-body">
+										<div class="news-content">
+											<div class="date"><?php echo get_the_date('d M, Y'); ?></div>
+											<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+											<p class="text"><?php the_excerpt(); ?></p>
+										</div>
+									</div>
+								</div>
+								<!-- End Single Blog -->
+							</div>
+						<?php endwhile; 
+						wp_reset_postdata(); 
+					else : ?>
+						<p><?php _e('No posts found.', 'text-domain'); ?></p> 
+					<?php endif; ?>
+				</div>
 		
 		<!-- Start clients -->
 		<div class="clients overlay border-top">
