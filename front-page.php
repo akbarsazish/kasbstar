@@ -340,7 +340,7 @@
 					<?php 
 					// Custom query to get the last 3 posts
 					$args = array(
-						'posts_per_page' => 6, 
+						'posts_per_page' => 3, 
 						'post_status' => 'publish', 
 					);
 
