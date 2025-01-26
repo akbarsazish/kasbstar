@@ -181,7 +181,7 @@
 							   <i class="icofont-ui-contact-list"></i>
 							</div>
 							<h3> سفارش کالا </h3>
-							<p> سفارش کالا مورد نظر تلفنی یا آنلاین در   <a class="text-primary" target="_blank" href="https://starfoods.ir/" > استارفود </a>  </p>
+							<p> سفارش کالا مورد نظر تلفنی یا آنلاین در   <a class="text-primary" href="https://starfoods.ir/" > استارفود </a>  </p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -323,7 +323,20 @@
 		<!--/ End Call to action -->
 
 
-		<div class="row">
+
+				<!-- Start Blog Area -->
+				<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2 class="text-center"> با جدیدترین ها با ما همراه باشید</h2>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/section-img.png" alt="#">
+							<p> ما هر چند روز اطلاعات جدیدی درباره تولیدات و فعالیت‌های خود منتشر می‌کنیم تا مشتریان با آخرین اخبار و خدمات ما آشنا شوند </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
 					<?php 
 					// Custom query to get the last 3 posts
 					$args = array(
@@ -367,6 +380,10 @@
 						<p><?php _e('No posts found.', 'text-domain'); ?></p> 
 					<?php endif; ?>
 				</div>
+
+			</div>
+		</section>
+		
 		
 		<!-- Start clients -->
 		<div class="clients overlay border-top">
