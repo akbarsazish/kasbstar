@@ -266,35 +266,35 @@
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf1.jpg" alt="قند">
-								<a href="/sugar/" class="btn">View Details</a>
+								<a href="/sugar/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf2.jpg" alt="برنج">
-								<a href="/rice/" class="btn">View Details</a>
+								<a href="/rice/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf3.jpg" alt="شکر">
-								<a href="/sugar/" class="btn">View Details</a>
+								<a href="/sugar/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf4.jpg" alt="روغن">
-								<a href="/oil/" class="btn">View Details</a>
+								<a href="/oil/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf1.jpg" alt="قند">
-								<a href="/sugar" class="btn">View Details</a>
+								<a href="/sugar" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf2.jpg" alt="برنج">
-								<a href="/rice/" class="btn">View Details</a>
+								<a href="/rice/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf3.jpg" alt="شکر">
-								<a href="/sugar/" class="btn">View Details</a>
+								<a href="/sugar/" class="btn">مشاهده جزئیات </a>
 							</div>
 							<div class="single-pf">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pf4.jpg" alt="روغن">
-								<a href="/oil/" class="btn">View Details</a>
+								<a href="/oil/" class="btn">مشاهده جزئیات </a>
 							</div>
 						</div>
 					</div>
