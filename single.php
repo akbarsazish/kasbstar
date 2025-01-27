@@ -38,7 +38,12 @@
 									<!-- Meta -->
 									<div class="meta">
 										<div class="meta-left">
-											<span class="date"><i class="fa fa-clock-o"></i><?php echo get_the_date(); ?></span>
+											<span class="date"> <i class="fa fa-clock-o"></i> 
+											     <?php
+													$post_date = get_the_date('U'); 
+													echo format_jalali_date($post_date);
+											     ?>
+											</span>
 										</div>
 										<div class="meta-right">
 											<span class="author"><a href="#"> <?php the_author();?></a></span>
@@ -111,7 +116,13 @@
 									<div class="content">
 										<h5><a href="<?php echo the_permalink();?>"> <?php echo the_title();?> </a></h5>
 										<ul class="comment">
-											<li> <?php echo get_post_time('F, j, Y');?> <i class="fa fa-calendar" aria-hidden="true"></i> </li>
+											<li> 
+												<?php
+													$post_date = get_the_date('U'); 
+													echo format_jalali_date($post_date);
+											     ?>
+												 <i class="fa fa-calendar" aria-hidden="true"></i>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -130,10 +141,11 @@
 								<ul class="tag">
 								   <?php 
 										foreach(get_the_tags() as $tag){ ?>
-
-										  <li><a href="<?php echo get_tag_link($tag->term_ID); ?>">
+										  <li>
+											<a href="<?php echo get_tag_link($tag->term_ID); ?>">
 											  <?php echo $tag->name ?>
-										  </a></li>
+										    </a>
+										</li>
 										 
 									<?php } ?>
 								</ul>

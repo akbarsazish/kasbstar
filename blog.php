@@ -66,7 +66,12 @@ get_header();  ?>
 									</div>
 									<div class="news-body">
 										<div class="news-content">
-											<div class="date"><?php echo get_the_date('d M, Y'); ?></div>
+											<div class="date">
+											    <?php
+													$post_date = get_the_date('U'); 
+													echo format_jalali_date($post_date);
+											     ?>
+											</div>
 											<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 											<p class="text"><?php the_excerpt(); ?></p>
 										</div>

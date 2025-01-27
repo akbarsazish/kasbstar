@@ -50,9 +50,11 @@ body{
 	-moz-box-shadow: -3px 0px 25px -2px rgba(0, 0, 0, 0.2);
 	box-shadow: -3px 0px 25px -2px rgba(0, 0, 0, 0.2);
 }
+
 .color-plate.active{
 	right:0;
 }
+
 .color-plate .color-plate-icon {
 	position: absolute;
 	left: -48px;
@@ -68,17 +70,20 @@ body{
 	cursor: pointer;
 	box-shadow: -4px 0px 5px #00000036;
 }
+
 .color-plate h4 {
 	display: block;
 	font-size: 15px;
 	margin-bottom: 5px;
 	font-weight: 500;
 }
+
 .color-plate p {
 	font-size: 13px;
 	margin-bottom: 15px;
 	line-height: 20px;
 }
+
 .color-plate span {
 	width: 42px;
 	height: 35px;
@@ -87,18 +92,23 @@ body{
 	display: inline-block;
 	margin-right: 3px;
 }
+
 .color-plate span:hover{
 	cursor:pointer;
 }
+
 .color-plate span.color1{
 	background:#1A76D1;
 }
+
 .color-plate span.color2{
 	background:#2196F3;
 }
+
 .color-plate span.color3{
 	background:#32B87D;
 }
+
 .color-plate span.color4{
 	background:#FE754A;
 }
@@ -300,11 +310,13 @@ body{
 .header .single-widget:last-child{
 	margin:0;
 }
+
 .header .single-widget .logo{
 	margin:0;
 	padding:0;
 	margin-top: 7px;
 }
+
 .header .single-widget i {
 	position: absolute;
 	left: 0;
@@ -318,6 +330,7 @@ body{
 	text-align: center;
 	font-size: 15px;
 }
+
 .header .single-widget h4 {
 	font-size: 15px;
 	font-weight: 500;
@@ -733,9 +746,7 @@ body{
 .schedule .single-schedule a i{
 	margin-left:10px;
 }
-.schedule .single-schedule .time-sidual{
-	
-}
+
 .schedule .single-schedule .time-sidual{
 	overflow:hidden;
 	margin-top:17px;
@@ -809,6 +820,7 @@ body{
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 }
+
 .Feautes .single-features:hover .signle-icon i{
 	background:#1A76D1;
 	color:#fff;
@@ -919,7 +931,7 @@ body{
 .why-choose .choose-left p{
 	margin-bottom:35px;
 }
-.why-choose .choose-left .list{}
+
 .why-choose .choose-left .list li {
 	color: #868686;
 	margin-bottom: 12px;
@@ -2651,7 +2663,7 @@ textarea::placeholder {
 /*====================
    Start Login CSS
 ======================*/
-.login .inner{
+/* .login .inner{
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 	overflow:hidden;
@@ -2798,7 +2810,7 @@ textarea::placeholder {
 }
 .login .login-form .lost-pass:hover{
 	color:#1A76D1;
-}
+} */
 /*====================
    End Login CSS
 ======================*/
@@ -2806,7 +2818,7 @@ textarea::placeholder {
 /*=========================
    Start Register CSS
 ===========================*/
-.register .inner{
+/* .register .inner{
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 	overflow:hidden;
@@ -2951,7 +2963,7 @@ textarea::placeholder {
 }
 .register .register-form .terms:hover{
 	color:#2C2D3F;
-}
+} */
 /*=========================
    End Register CSS
 ===========================*/
@@ -3434,9 +3446,7 @@ textarea::placeholder {
 .doctor-calendar-table table tbody tr:last-child td {
   border-bottom: none;
 }
-/*===============================
-	End Doctor Calendar CSS
-=================================*/
+
 
 /*=========================
 	Start About Us CSS
@@ -3515,6 +3525,7 @@ textarea::placeholder {
 .about-content .btn {
   margin-top: 30px;
 }
+
 /* Start Our Vision Area CSS */
 .our-vision-area {
   position: relative;

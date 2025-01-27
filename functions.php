@@ -58,3 +58,32 @@ function theme_widgets_init(){
 
 add_action('widgets_init', 'theme_widgets_init');
 
+
+
+function gregorian_to_jalali($gy, $gm, $gd) {
+    $g_d_m = array(0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334);
+    $gy2 = ($gm > 2) ? ($gy + 1) : $gy;
+    $days = 355666 + (365 * $gy) + ((int)(($gy2 + 3) / 4)) - ((int)(($gy2 + 99) / 100)) + ((int)(($gy2 + 399) / 400)) + $gd + $g_d_m[$gm - 1];
+    $jy = -1595 + (33 * ((int)($days / 12053)));
+    $days %= 12053;
+    $jy += 4 * ((int)($days / 1461));
+    $days %= 1461;
+
+    if ($days > 365) {
+        $jy += (int)(($days - 1) / 365);
+        $days = ($days - 1) % 365;
+    }
+
+    $jm = ($days < 186) ? 1 + (int)($days / 31) : 7 + (int)(($days - 186) / 30);
+    $jd = 1 + (($days < 186) ? ($days % 31) : (($days - 186) % 30));
+    return array($jy, $jm, $jd);
+}
+
+
+function format_jalali_date($timestamp) {
+    $date = date('Y-m-d', $timestamp);
+    list($gy, $gm, $gd) = explode('-', $date);
+    list($jy, $jm, $jd) = gregorian_to_jalali($gy, $gm, $gd);
+    $months = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12');
+    return $jy . '-' . $months[$jm - 1] . '-' . $jd;
+}
