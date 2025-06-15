@@ -59,7 +59,7 @@ function theme_widgets_init(){
 add_action('widgets_init', 'theme_widgets_init');
 
 
-
+// change the grygorian date to jalali
 function gregorian_to_jalali($gy, $gm, $gd) {
     $g_d_m = array(0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334);
     $gy2 = ($gm > 2) ? ($gy + 1) : $gy;
